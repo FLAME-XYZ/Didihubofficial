@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.timer-button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.timer-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.bet-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bet-amount {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+}
+
+.bet-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.bet-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bet-button.green {
+    background-color: green;
+}
+
+.bet-button.purple {
+    background-color: purple;
+}
+
+.bet-button.red {
+    background-color: red;
+}
+
+.results {
+    text-align: center;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.result {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#result-0, #result-5 {
+    background-color: purple;
+    color: white;
+}
+
+#result-1, #result-6 {
+    background-color: green;
+    color: white;
+}
+
+#result-2, #result-7 {
+    background-color: purple;
+    color: white;
+}
+
+#result-3, #result-8 {
+    background-color: green;
+    color: white;
+}
+
+#result-4, #result-9 {
+    background-color: red;
+    color: white;
+}
+
+.bet-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bet-option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.history {
+    text-align: center;
+}
+
+#history-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}

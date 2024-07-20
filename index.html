@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingo Tebak Warna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Wingo Tebak Warna</h1>
+        </div>
+        <div class="game">
+            <div class="timer-section">
+                <button class="timer-button active" id="super-cepat-btn">Super Cepat: <span id="super-cepat-timer">00:09</span></button>
+                <button class="timer-button" id="cepat-btn">Cepat: <span id="cepat-timer">00:44</span></button>
+                <button class="timer-button" id="standar-btn">Standar: <span id="standar-timer">00:44</span></button>
+            </div>
+            <div class="bet-section">
+                <input type="number" id="bet-amount" placeholder="Masukkan jumlah taruhan" class="bet-amount" />
+                <div class="bet-buttons">
+                    <button class="bet-button green" id="green">Hijau</button>
+                    <button class="bet-button purple" id="purple">Ungu</button>
+                    <button class="bet-button red" id="red">Merah</button>
+                </div>
+            </div>
+            <div class="results">
+                <div class="result-row">
+                    <div class="result" id="result-0">0</div>
+                    <div class="result" id="result-1">1</div>
+                    <div class="result" id="result-2">2</div>
+                    <div class="result" id="result-3">3</div>
+                    <div class="result" id="result-4">4</div>
+                </div>
+                <div class="result-row">
+                    <div class="result" id="result-5">5</div>
+                    <div class="result" id="result-6">6</div>
+                    <div class="result" id="result-7">7</div>
+                    <div class="result" id="result-8">8</div>
+                    <div class="result" id="result-9">9</div>
+                </div>
+                <div class="bet-options">
+                    <button class="bet-option">Kecil</button>
+                    <button class="bet-option">Besar</button>
+                    <button class="bet-option">K/M</button>
+                    <button class="bet-option">K/H</button>
+                    <button class="bet-option">B/M</button>
+                    <button class="bet-option">B/H</button>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <h2>Riwayat</h2>
+            <div id="history-list">
+                <!-- History will be appended here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
